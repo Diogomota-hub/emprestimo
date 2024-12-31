@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculo de emprestimo</title>
+</head>
+
+<body>
+    <h1>Emprestimo💲</h1>
+
+    <main>
+        <label for="valor-emprestimo">Valor do emprestimo</label>
+        <input type="number" name="valor do emprestimo" id="valor-emprestimo" class="caixa">
+
+        <label for="Juros">Juros</label>
+        <input type="number" name="Juros" id="juros" class="caixa">
+
+        <label for="total-parcelas">Total de parcelas</label>
+        <input type="number" name="total de parcelas" id="total-parcelas" class="caixa">
+
+        <input type="button" value="calcular" id="botao" onclick="calcular()">
+
+
+        <!--modal-->
+        <dialog id="modal">
+                
+            <button id="botao-fechar" onclick="fecharmodal()">X</button>
+        </dialog>
+    </main>
+    <script src="emprestimo.js"></script>
+</body>
+
+</html>
